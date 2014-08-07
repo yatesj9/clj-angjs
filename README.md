@@ -1,4 +1,4 @@
-# clj-angjs-template
+# clj-angjs
 A Leiningen template for projects that use Clojure and AngularJS.
 
 ## Usage
@@ -9,7 +9,7 @@ Clone the repo to a local folder and execute
 
 Deploy the template with your own project name
 
-	$ lein new clj-angjs-template <your new project name>
+	$ lein new clj-angjs <your new project name>
 
 ## License
 
