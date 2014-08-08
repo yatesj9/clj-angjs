@@ -1,22 +1,10 @@
-(ns {{ns-name}}.server.development
-    (:require [clojure.tools.logging           :as log]
-              [{{ns-name}}.config          :refer [get-settings]]
+(ns {{ns-name}}.servers.development
+    (:require [{{ns-name}}.config          :refer [get-settings]]
               [{{ns-name}}.routes          :refer [app]]
+              [{{ns-name}}.servers.common  :refer [start]]
               [compojure.handler               :as handler]
               [ring.middleware.format          :refer [wrap-restful-format]]
-              [com.duelinmarkers.ring-request-logging :refer (wrap-request-logging)])
-    (:use [ring.adapter.jetty :only (run-jetty)]))
-
-(defn- start-thread
-  [routes port]
-  (.start (Thread. #(run-jetty routes
-                               {:port port
-                                :join? false}))))
-
-(defn- start
-  [{:keys [routes port]}]
-  (log/info (str "Starting Server...."))
-  (start-thread routes port))
+              [com.duelinmarkers.ring-request-logging :refer (wrap-request-logging)]))
 
 (defn make-stack
   [mode]

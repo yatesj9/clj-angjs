@@ -1,5 +1,5 @@
 (defproject {{ns-name}} "0.1.0"
-  :description "Admin for Vault"
+  :description "clj-angjs"
   :url "http://gitlab/{{ns-name}}"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
