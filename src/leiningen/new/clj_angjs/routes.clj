@@ -6,6 +6,7 @@
   [])
 
 (defroutes app
+  ;; Return's index.html found in public/app
   (GET "/" [] (my-handler))
   (route/files "/" {:root "public/app"})
   (route/files "/bower_components" {:root "public/bower_components"})
