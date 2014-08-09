@@ -1,19 +1,25 @@
 # clj-angjs
-A Leiningen template for projects that use Clojure and AngularJS.
+A Leiningen template for projects that use Clojure(Server Side) and AngularJS(Client Side), any HTML could be substituted for AngularJS.
 
-## Usage
+## Install
 
-Clone the repo to a local folder and execute (lein install optional)
+Clone the repo to a local folder.
+
+	$ git clone https://github.com/yatesj9/clj-angjs.git
+
+**Optional**
 
 	$ lein install
 
-Deploy the template with your own project name
+Deploy the template with your own project name. **NOTE: make sure you are in the cloned folder for the next step.** 
 
 	$ lein new clj-angjs <your new project name>
-	
-## What now
 
-The template defaults to **public/app**, to serve up a AngularJS or any html site. A good way to start is by using Yeoman <http://yeoman.io/>
+Once complete, copy the new folder with **'your new project name'** to any location.
+	
+## Usage
+
+The template defaults to **public/app**, to serve up AngularJS or any HTML site. A good way to start is by using Yeoman <http://yeoman.io/>
 	
 	$ yo angular 
 	
