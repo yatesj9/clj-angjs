@@ -25,7 +25,7 @@ You can start the server from a **REPL**
 (require '[<your new project name>.servers.development :refer [start-server
 	                                                           stop-server]])
 	                                                       
-(start-server)
+(start-server) ;Defaults to 8989, you can send a specific port (start-server "8080")
 (stop-server)
 ```
 

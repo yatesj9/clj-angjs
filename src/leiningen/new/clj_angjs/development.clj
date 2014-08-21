@@ -18,7 +18,7 @@
 
 (defn start
   [routes & [port]]
-  (let [port (if port (Integer/parseInt port) 8080)]
+  (let [port (if port (Integer/parseInt port) (get-settings :server :port))]
     (reset! server
             (serve routes
                    {:port port
@@ -31,5 +31,5 @@
   (reset! server nil))
 
 (defn start-server
-  []
-  (start (make-stack :development)))
+  [& [port]]
+  (start (make-stack :development) port))
