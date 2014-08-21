@@ -11,7 +11,6 @@
     (->files data ["src/{{sanitized}}/servers/development.clj" (render "development.clj" data)]
 ["src/{{sanitized}}/config.clj" (render "config.clj" data)]
 ["test/{{sanitized}}/tests/server/development_tests.clj" (render "development_tests.clj" data)]
-["src/{{sanitized}}/servers/common.clj" (render "common.clj" data)]
 ["src/{{sanitized}}/routes.clj" (render "routes.clj" data)]
 ["test/{{sanitized}}/core_test.clj" (render "core_test.clj" data)]
 ["src/{{sanitized}}/middlewares/logging.clj" (render "logging.clj" data)]

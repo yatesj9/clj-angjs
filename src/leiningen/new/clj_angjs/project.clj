@@ -12,5 +12,6 @@
                  [org.slf4j/slf4j-log4j12 "1.7.7"]
                  [org.clojure/tools.logging "0.3.0"]
                  [expectations "2.0.9"]
-                 [ring "1.3.0"]]
+                 [ring "1.3.0"]
+                 [ring-server "0.3.1"]]
   :plugins [[lein-autoexpect "1.0"]])
