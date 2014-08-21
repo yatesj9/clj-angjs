@@ -19,6 +19,16 @@ Once complete, copy the new folder with **'your new project name'** to any locat
 	
 ## Usage
 
+You can start the server from a **REPL**
+
+```clojure
+(require '[<your new project name>.servers.development :refer [start-server
+	                                                           stop-server]])
+	                                                       
+(start-server)
+(stop-server)
+```
+
 The template defaults to **public/app**, to serve up AngularJS or any HTML site. A good way to start is by using Yeoman <http://yeoman.io/>
 	
 	$ yo angular 
