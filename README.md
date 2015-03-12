@@ -24,7 +24,7 @@ Once complete, copy the new folder with **'your new project name'** to any locat
 You can start the server from a **REPL**
 
 ```clojure
-(require '[<your new project name>.servers.development :refer [start-server
+(require '[<your new project name>.repl :refer [start-server
 	                                                           stop-server]])
 	                                                       
 (start-server 3000) ;Port number must be included
