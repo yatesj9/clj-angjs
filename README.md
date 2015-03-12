@@ -25,7 +25,7 @@ You can start the server from a **REPL**
 
 ```clojure
 (require '[<your new project name>.repl :refer [start-server
-	                                                           stop-server]])
+	                                             stop-server]])
 	                                                       
 (start-server 3000) ;Port number must be included
 (stop-server)
