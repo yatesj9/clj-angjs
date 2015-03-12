@@ -1,17 +1,14 @@
-(defproject {{ns-name}} "0.1.0"
-  :description "clj-angjs"
-  :url "http://gitlab/{{ns-name}}"
-  :license {:name "Eclipse Public License"
-            :url "http://www.eclipse.org/legal/epl-v10.html"}
+(defproject {{ns-name}} "0.1.0-SNAPSHOT"
+  :description "FIXME: write description"
+  :url "http://example.com/FIXME"
+  :min-lein-version "2.0.0"
   :dependencies [[org.clojure/clojure "1.6.0"]
-                 [ring-mock "0.1.5"]
-                 [ring-middleware-format "0.3.2"]
-                 [com.duelinmarkers/ring-request-logging "0.2.0"]
-                 [compojure "1.1.8"]
-                 [log4j/log4j "1.2.17"]
-                 [org.slf4j/slf4j-log4j12 "1.7.7"]
-                 [org.clojure/tools.logging "0.3.0"]
-                 [expectations "2.0.9"]
-                 [ring "1.3.0"]
-                 [ring-server "0.3.1"]]
-  :plugins [[lein-autoexpect "1.0"]])
+                 [compojure "1.3.2"]
+                 [ring/ring-defaults "0.1.4"]
+                 [ring-server "0.4.0"]
+                 [hiccup "1.0.5"]]
+  :plugins [[lein-ring "0.8.13"]]
+  :ring {:handler {{ns-name}}.handler/app}
+  :profiles
+  {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
+                        [ring-mock "0.1.5"]]}})

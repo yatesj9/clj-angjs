@@ -8,14 +8,10 @@
   (let [data {:name name
               :ns-name (sanitize-ns name)
               :sanitized (name-to-path name)}]
-    (->files data ["src/{{sanitized}}/servers/development.clj" (render "development.clj" data)]
-["src/{{sanitized}}/config.clj" (render "config.clj" data)]
-["test/{{sanitized}}/tests/server/development_tests.clj" (render "development_tests.clj" data)]
-["src/{{sanitized}}/routes.clj" (render "routes.clj" data)]
-["test/{{sanitized}}/core_test.clj" (render "core_test.clj" data)]
-["src/{{sanitized}}/middlewares/logging.clj" (render "logging.clj" data)]
+    (->files data ["src/{{sanitized}}/handler.clj" (render "handler.clj" data)]
 ["project.clj" (render "project.clj" data)]
-["test/{{sanitized}}/tests/config_tests.clj" (render "config_tests.clj" data)]
-["src/{{sanitized}}/core.clj" (render "core.clj" data)]
-["resources/log4j.properties" (render "log4j.properties")]
+["src/{{sanitized}}/repl.clj" (render "repl.clj" data)]
+["test/{{sanitized}}/handler_test.clj" (render "handler_test.clj" data)]
+["resources/public/app/index.html" (render "index.html")]
+["resources/.DS_Store" (render ".DS_Store")]
 )))
