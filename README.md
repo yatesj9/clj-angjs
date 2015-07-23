@@ -1,6 +1,8 @@
 # clj-angjs
 A Leiningen template for projects that use Clojure(Server Side) and AngularJS(Client Side), any HTML could be substituted for AngularJS.
 
+Branch V2 is more compact and updated.
+
 * [clj-angjs](http://yatesj9.github.io/clj-angjs/)
 
 ## Install
